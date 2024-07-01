@@ -1,0 +1,19 @@
+li {
+  font-size: 2rem;
+}
+
+body {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+input {
+  width: 10rem;
+}
+
+.navbar {
+  background-color: rgb(33, 47, 48);
+}
+
+body {
+  background-color: rgb(29, 77, 61);
+}
