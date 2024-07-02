@@ -1,16 +1,17 @@
 import React from 'react'
 import Logo from '../../assets/logo.png'
 import './Marca.css'
+import { Link } from 'react-router-dom'
 
 const Marca = () => {
     return (
         <div >
 
-        <a > 
-        
-        <img src={Logo} alt="logo" className='logo-empresa' /> 
+            <Link to={"/"} >
 
-        </a>  
+                <img src={Logo} alt="logo" className='logo-empresa' />
+
+            </Link>
 
         </div>
     )
