@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 
 export const usePaginate = (data, itemsPerPage) => {
   const [currentPage, setCurrentPage] = useState(1);
