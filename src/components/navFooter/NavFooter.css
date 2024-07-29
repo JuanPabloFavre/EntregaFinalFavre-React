@@ -4,7 +4,7 @@ li {
 }
 
 body {
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
 }
 
 input {
@@ -12,14 +12,22 @@ input {
 }
 
 .navbar {
-  background-color: rgb(33, 47, 48);
+  background-color: rgb(4, 18, 85);
 }
 
 body {
-  background-color: rgb(29, 77, 61);
+  background-color: rgb(245, 245, 247);
 }
 
 ol,
 ul {
   list-style: none;
+}
+
+li {
+  color: white;
+}
+
+li:hover {
+  color: aqua;
 }

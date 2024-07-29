@@ -1,7 +1,7 @@
 import CounterContainer from "../../components/counter/CounterContainer"
 
 
-const ItemDetail = ({ item }) => {
+const ItemDetail = ({ item, onAdd, initial }) => {
     return (
         <div className="d-flex justify-content-center m-5 ">
 
@@ -14,9 +14,9 @@ const ItemDetail = ({ item }) => {
                     <h5 className="card p-5 m-3" >{item.detail}</h5>
                     <p className="card-tex fs-3 text text-danger">Precio:  ${item.price}</p>
                     <p className="card-text fs-3 text">Stock:  {item.stock}</p>
-                    <button className="btn btn-success btn-lg">Agregar al Carrito</button>
+
                 </div>
-                <CounterContainer />
+                <CounterContainer onAdd={onAdd} stock={item.stock} initial={initial} />
             </div>
 
 

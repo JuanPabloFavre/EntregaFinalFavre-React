@@ -11,9 +11,13 @@ input {
 }
 
 .navbar {
-  background-color: rgb(33, 47, 48);
+  background-color: rgb(70, 168, 175);
 }
 
 body {
-  background-color: rgb(29, 77, 61);
+  background-color: rgb(26, 63, 163);
+}
+
+li:hover {
+  color: rgb(0, 68, 255);
 }

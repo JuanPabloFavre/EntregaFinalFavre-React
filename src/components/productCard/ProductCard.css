@@ -5,3 +5,8 @@
 .card-text {
   font-size: 1rem;
 }
+
+.btn.disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}

@@ -1,12 +1,10 @@
 
-const Counter = ({ contador, sumar, restar }) => {
+const Counter = ({ contador, sumar, restar, onAdd }) => {
 
 
     return (
 
         <div>
-
-
 
             <div className="d-flex justify-content-center">
                 <button className="btn btn-info m-2" onClick={sumar}> + </button>
@@ -16,8 +14,14 @@ const Counter = ({ contador, sumar, restar }) => {
                 <button className="btn btn-danger m-2" onClick={restar}> - </button>
             </div>
 
+            <div className="d-flex justify-content-center">
+                <button className="btn btn-success btn-lg" onClick={() => onAdd(contador)}>Agregar al Carrito</button>
+            </div >
 
-        </div>
+
+
+
+        </div >
     )
 }
 

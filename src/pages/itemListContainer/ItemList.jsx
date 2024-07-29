@@ -1,32 +1,46 @@
 import ProductCard from "../../components/productCard/ProductCard"
+import { usePaginate } from "../../hooks/usePaginate"
+import { RxTrackNext, RxTrackPrevious } from "react-icons/rx";
+
 
 
 const ItemList = ({ items }) => {
+
+    const { currentData, nextPage, prevPage, totalPages, currentPage } = usePaginate(items, 8)
     return (
+        <>
 
-        <div className="d-flex flex-wrap p-3 m-3 justify-content-center " >
+            <div className="d-flex flex-wrap p-3 m-3 justify-content-center " >
 
-            {items.map((item) => {
+                {currentData.map((item) => {
 
-                return (
+                    return (
 
-                    <ProductCard
-                        key={item.id}
-                        img={item.img}
-                        title={item.title}
-                        price={item.price}
-                        stock={item.stock}
-                        id={item.id}
-                    />
-                )
-            })
-            }
+                        <ProductCard
+                            key={item.id}
+                            img={item.img}
+                            title={item.title}
+                            price={item.price}
+                            stock={item.stock}
+                            id={item.id}
+                        />
+                    )
+                })
 
-
-
-        </div>
+                }
 
 
+
+            </div>
+            <div>
+                <div className="d-flex">
+
+                    <button className="btn btn-dark p-2 m-2 " onClick={prevPage} disabled={currentPage === 1}>{<RxTrackPrevious />}</button>
+                    <h4>{currentPage}/{totalPages}</h4>
+                    <button className="btn btn-primary p-2 m-2" onClick={nextPage} disabled={totalPages === currentPage}>{<RxTrackNext />}</button>
+                </div>
+            </div>
+        </>
     )
 }
 
