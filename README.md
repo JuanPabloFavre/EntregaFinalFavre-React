@@ -1,13 +1,14 @@
-# React + Vite
+# Futbolandia
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Bienvenido a **Futbolandia**, tu tienda en línea de ropa deportiva y calzado. Este proyecto está construido con React y utiliza varias librerías modernas para ofrecerte una experiencia de compra fluida y atractiva.
 
-Currently, two official plugins are available:
+## Tecnologías Utilizadas
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-# PreEntrega2Favre-React
-# PreEntrega2Favre-React
-# PreEntrega2Favre-React
-# EntregaFinalFavre-React
-# EntregaFinalFavre-React
+- **React**: ^18.2.0
+- **Bootstrap**: ^5.3.3
+- **Firebase**: ^10.12.4
+- **React Icons**: ^5.2.1
+- **React Router DOM**: ^6.24.0
+- **React Spinners**: ^0.14.1
+- **Sonner**: ^1.5.0
+- **SweetAlert2**: ^11.12.3
