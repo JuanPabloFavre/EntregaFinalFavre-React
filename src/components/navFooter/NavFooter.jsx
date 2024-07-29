@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 
 const NavFooter = () => {
     return (
-        <div className="sticky-bottom">
+        <div>
 
             <ul className="navbar text-info d-flex justify-content-center">
                 <li className="nav-item">
